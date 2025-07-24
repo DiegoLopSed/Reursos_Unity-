@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class Movimiento : MonoBehaviour
 {
+
+    //copia aqui
+
     public float speed = 5.0f;
     public float jumpForce = 10f;
     private float move = 0f;
@@ -32,7 +35,7 @@ public class Movimiento : MonoBehaviour
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
         }
     }
-   
+
     void OnDrawGizmosSelected()
     {
         if (groundCheck != null)
@@ -41,5 +44,7 @@ public class Movimiento : MonoBehaviour
             Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
         }
     }
+    
+    //aqui termina la copia
 }
 
